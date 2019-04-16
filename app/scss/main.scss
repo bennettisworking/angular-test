@@ -104,10 +104,12 @@ body{
   margin: 10px 0 0 0;
   padding: 0;
 }
+
 .sidebar img{
   margin: -1px 3px 0 0;
   border-radius: $sm-border-radius;
 }
+
 .sidebar .list{
   list-style: none;
   height: 80px;
@@ -169,9 +171,17 @@ body{
 	border-left: 6px solid $likes-background;
 }
 
+.likes .fa-li i{
+  font-size: 12px;
+}
+
+.likes .fa-li{
+  margin-top: -1px;
+}
+
 .likes__header{
   background-color: $likes-background;
-  padding:5px;
+  padding:5px 5px 5px 10px;
   font-size: 20px;
   font-weight: bold;
 }

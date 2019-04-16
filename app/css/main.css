@@ -128,8 +128,14 @@ body {
   font-size: 18px;
   border-left: 6px solid #eeeeee; }
 
+.likes .fa-li i {
+  font-size: 12px; }
+
+.likes .fa-li {
+  margin-top: -1px; }
+
 .likes__header {
   background-color: #eeeeee;
-  padding: 5px;
+  padding: 5px 5px 5px 10px;
   font-size: 20px;
   font-weight: bold; }

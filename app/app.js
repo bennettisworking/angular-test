@@ -81,7 +81,7 @@ function profile(){
             	<img class="profile__image" ng-src="{{records[currentrec].img}}">\
             </div>\
             <div class="col-lg-9 col-md-7 col-sm-8">\
-            <h3 class="profile__name">{{records[currentrec].name}}</h3>\
+            <h3 class="profile__name mt-3 mt-sm-0 mt-md-0 mt-lg-0">{{records[currentrec].name}}</h3>\
             <div rating-div></div>\
               <button ng-click="sendMessage()" class="button button--main">SEND MESSAGE</button><br>\
             </div>\
