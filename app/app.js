@@ -67,7 +67,7 @@ function sidebar(){
       return{
 		template: '<div class="sidebar">\
           <ul>\
-            <div class="list" ng-repeat="rec in records | filter: {name:keyword}" ng-click="$parent.currentrec = $index">\
+            <div class="sidebar__list" ng-class="{active: currentrec == $index}" ng-repeat="rec in records | filter: {name:keyword}" ng-click="$parent.currentrec = $index">\
             <img height="40" ng-src="{{rec.img}}"> {{rec.name}}</div>\
           </ul>\
         </div>'

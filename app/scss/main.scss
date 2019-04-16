@@ -9,6 +9,7 @@ $likes-background: #eeeeee;
 $border-color: #d0dfeb;
 $border-radius: 5px;
 $sm-border-radius: 4px;
+$highlight-color: #f0f8fb;
 
 body{
   background-color: #f5f8f9 !important;
@@ -110,7 +111,7 @@ body{
   border-radius: $sm-border-radius;
 }
 
-.sidebar .list{
+.sidebar__list{
   list-style: none;
   height: 80px;
   width: 100%;
@@ -123,13 +124,17 @@ body{
 }
 
 @media (max-width: 577px) { 
-  .sidebar .list{
+  .sidebar__list{
     font-size: 20px;
     } 
   }
 
-.sidebar .list:hover{
+.sidebar__list:hover{
   background: $border-color;
+}
+
+.sidebar__list.active{
+  background: $highlight-color;
 }
 
 .rating{

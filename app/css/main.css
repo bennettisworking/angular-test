@@ -80,7 +80,7 @@ body {
   margin: -1px 3px 0 0;
   border-radius: 4px; }
 
-.sidebar .list {
+.sidebar__list {
   list-style: none;
   height: 80px;
   width: 100%;
@@ -92,11 +92,14 @@ body {
   margin: 0 0 15px 0; }
 
 @media (max-width: 577px) {
-  .sidebar .list {
+  .sidebar__list {
     font-size: 20px; } }
 
-.sidebar .list:hover {
+.sidebar__list:hover {
   background: #d0dfeb; }
+
+.sidebar__list.active {
+  background: #f0f8fb; }
 
 .rating i {
   font-size: 26px;
