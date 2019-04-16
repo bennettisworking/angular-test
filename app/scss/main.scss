@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+$text-color: #3e3f3a;
+$header-color: #0b4366;
+$header-text: #ffffff;
+$heart-color: #722020;
+$main-button: #128da3;
+$likes-background: #eeeeee;
+$border-color: #d0dfeb;
+
+body{
+  background-color: #f5f8f9 !important;
+}
+
+.container{
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  min-height: 300px;
+  color: $text-color;
+  max-width: 1300px !important;
+}
+.header{
+  background-color: $header-color;
+	margin-bottom: 20px;
+  color: $header-text;
+  padding:10px 0;
+}
+
+  .header__content{
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+  .header__userinfo{
+    float: right;
+    margin-top: -35px;
+    i{
+      font-size:30px;
+      vertical-align: middle;
+      margin-left: 4px;
+    }
+  }
+
+  .search { 
+    position: relative; 
+  }
+
+  .search input { 
+    text-indent: 30px;
+  }
+
+  .search .fa-search { 
+    color: $text-color;
+    position: absolute;
+    top: 14px;
+    left:25px;
+    font-size: 15px;
+  }
+
+
+.text-input{
+	width: 100%;
+	border-radius: 5px;
+  border: none;
+  height: 42px
+}
+
+.text-input::placeholder { 
+  color: #ded7ca;
+}
+
+.button{
+  padding: 20px 40px;
+  font-size: 12px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.button:hover{
+  opacity: .9;
+}
+
+.button--main{
+  background-color: $main-button;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.sidebar ul{
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+.sidebar img{
+  margin-right: 3px;
+}
+.sidebar .list{
+  list-style: none;
+  height: 80px;
+  width: 100%;
+  border: 1px solid $border-color;
+  border-radius: 5px;
+  font-size: 20px;
+  padding:18px 0 0 15px;
+  cursor: pointer;
+  margin: 0 0 15px 0;
+}
+
+.sidebar .list:hover{
+  background: $border-color;
+}
+
+.rating{
+  i{
+    font-size: 26px;
+  margin-right: 5px;
+  color: #ccc;
+  }
+  i.fas{
+    color: $heart-color;
+  }
+}
+
+.profile{
+  margin-top: 12px;
+}
+
+.profile__image{
+	width: 200px;
+	height: 200px;
+	border-radius: 5px;
+}
+
+.profile__description{
+	margin:25px 0 30px;
+	font-size: 18px;
+	border-left: 6px solid $likes-background;
+	padding-left: 40px;
+}
+
+.likes__header{
+  background-color: $likes-background;
+  padding:5px;
+}

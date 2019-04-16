@@ -1,0 +1,29 @@
+var gulp = require('gulp');
+var browserSync = require('browser-sync').create();
+var sass        = require('gulp-sass');
+var jshint 		= require('gulp-jshint');
+
+gulp.task('serve', ['sass'], function() {
+    browserSync.init({
+        server: "./app"
+    });
+
+    gulp.watch("app/scss/*.scss", ['sass']);
+    gulp.watch("app/*.js", ['jshint']);
+    gulp.watch("app/*").on('change', browserSync.reload);
+});
+
+gulp.task('sass', function() {
+    return gulp.src("app/scss/*.scss")
+        .pipe(sass())
+        .pipe(gulp.dest("app/css"))
+        .pipe(browserSync.stream())
+});
+
+gulp.task('default', ['serve']);
+
+gulp.task('jshint', function() {
+  return gulp.src('app/*.js')
+    .pipe(jshint())
+    .pipe(jshint.reporter('jshint-stylish'));
+});
