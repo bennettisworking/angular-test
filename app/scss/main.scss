@@ -26,15 +26,15 @@ body{
   padding:10px 0;
 }
 
-  .header__content{
-    width: 100%;
-    max-width: 1300px;
-    margin: 0 auto;
-  }
+.header__content{
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
 
-  .header__userinfo{
-    float: right;
-    margin-top: -35px;
+.header__userinfo{
+  float: right;
+  margin-top: -35px;
     i{
       font-size:30px;
       vertical-align: middle;
@@ -46,16 +46,16 @@ body{
     position: relative; 
   }
 
-  .search input { 
-    text-indent: 30px;
+.search input { 
+  text-indent: 30px;
   }
 
-  .search .fa-search { 
-    color: $text-color;
-    position: absolute;
-    top: 14px;
-    left:25px;
-    font-size: 15px;
+.search .fa-search { 
+  color: $text-color;
+  position: absolute;
+  top: 14px;
+  left:25px;
+  font-size: 15px;
   }
 
 
@@ -92,7 +92,8 @@ body{
   padding: 0;
 }
 .sidebar img{
-  margin-right: 3px;
+  margin: -1px 3px 0 0;
+  border-radius: 4px;
 }
 .sidebar .list{
   list-style: none;
@@ -101,7 +102,7 @@ body{
   border: 1px solid $border-color;
   border-radius: 5px;
   font-size: 20px;
-  padding:18px 0 0 15px;
+  padding:20px 0 0 15px;
   cursor: pointer;
   margin: 0 0 15px 0;
 }
@@ -141,4 +142,6 @@ body{
 .likes__header{
   background-color: $likes-background;
   padding:5px;
+  font-size: 20px;
+  font-weight: bold;
 }
