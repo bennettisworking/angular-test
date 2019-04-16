@@ -7,6 +7,8 @@ $heart-color: #722020;
 $main-button: #128da3;
 $likes-background: #eeeeee;
 $border-color: #d0dfeb;
+$border-radius: 5px;
+$sm-border-radius: 4px;
 
 body{
   background-color: #f5f8f9 !important;
@@ -70,10 +72,9 @@ body{
   font-size: 15px;
   }
 
-
 .text-input{
 	width: 100%;
-	border-radius: 5px;
+	border-radius: $border-radius;
   border: none;
   height: 42px
 }
@@ -85,7 +86,7 @@ body{
 .button{
   padding: 20px 40px;
   font-size: 12px;
-  border-radius: 5px;
+  border-radius: $border-radius;
   margin-bottom: 10px;
 }
 
@@ -105,14 +106,14 @@ body{
 }
 .sidebar img{
   margin: -1px 3px 0 0;
-  border-radius: 4px;
+  border-radius: $sm-border-radius;
 }
 .sidebar .list{
   list-style: none;
   height: 80px;
   width: 100%;
   border: 1px solid $border-color;
-  border-radius: 5px;
+  border-radius: $border-radius;
   font-size: 17px;
   padding:20px 0 0 15px;
   cursor: pointer;
@@ -152,7 +153,7 @@ body{
   width: 100%;
 	max-width: 200px;
 	max-height: 200px;
-	border-radius: 5px;
+	border-radius: $border-radius;
 }
 
 @media (max-width: 767px) { 

@@ -1,4 +1,4 @@
-var myApp = angular
+let myApp = angular
 .module("AngularJSTest", [])
 .controller("MainController", MainController)
 .directive('headerDiv', header)
@@ -9,6 +9,7 @@ var myApp = angular
 .factory('dataService', dataService);
 
 // CONTROLLERS
+
 function MainController($scope, dataService){
 	$scope.keyword = "";
 	$scope.currentrec = 0;
@@ -45,13 +46,17 @@ function likes(){
 		<div class="col-lg-6 col-md-6 col-12">\
 		<h4 class="likes__header"><i class="far fa-thumbs-up"></i> Likes</h4>\
 		<ul class="fa-ul">\
-		<li ng-repeat="like in records[currentrec].Likes"><span class="fa-li"><i class="fas fa-heart"></i></span>{{like}}</li>\
+		<li ng-repeat="like in records[currentrec].Likes">\
+		<span class="fa-li"><i class="fas fa-heart"></i></span>{{like}}\
+		</li>\
 		</ul>\
 		</div>\
 		<div class="col-lg-6 col-md-6 col-12">\
 		<h4 class="likes__header"><i class="far fa-thumbs-down"></i> Disikes</h4>\
 		<ul class="fa-ul">\
-		<li ng-repeat="like in records[currentrec].Dislikes"><span class="fa-li"><i class="fas fa-heart-broken"></i></span>{{like}}</li>\
+		<li ng-repeat="like in records[currentrec].Dislikes">\
+		<span class="fa-li"><i class="fas fa-heart-broken"></i></span>{{like}}\
+		</li>\
 		</ul>\
 		</div>\
 		</div>'
@@ -97,7 +102,6 @@ function rating(){
 	}
 
 }
-
 
 //// DATA FACTORY
 
