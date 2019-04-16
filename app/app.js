@@ -28,11 +28,11 @@ function MainController($scope, dataService){
 function header(){
 	return {
         template: '<div class="header__content">\
-        <div class="col-3 search">\
+        <div class="col-lg-3 col-md-6 col-sm-6 col-10 search">\
         <span class="fa fa-search"></span>\
         <input ng-model="keyword" type="text" class="text-input" placeholder="Search"></div>\
-        <div class="col-3 offset-9">\
-        <div class="header__userinfo">Peter Hoang <i class="fas fa-user-circle"></i>\
+        <div class="col-lg-3 offset-lg-9">\
+        <div class="header__userinfo"><span class="header__username">Peter Hoang</span> <i class="fas fa-user-circle"></i>\
         </div>\
         </div>\
         </div>'
@@ -42,13 +42,13 @@ function header(){
 function likes(){
 	return {
 		template: '<div class="row likes">\
-		<div class="col-6">\
+		<div class="col-lg-6 col-md-6 col-12">\
 		<h4 class="likes__header"><i class="far fa-thumbs-up"></i> Likes</h4>\
 		<ul class="fa-ul">\
 		<li ng-repeat="like in records[currentrec].Likes"><span class="fa-li"><i class="fas fa-heart"></i></span>{{like}}</li>\
 		</ul>\
 		</div>\
-		<div class="col-6">\
+		<div class="col-lg-6 col-md-6 col-12">\
 		<h4 class="likes__header"><i class="far fa-thumbs-down"></i> Disikes</h4>\
 		<ul class="fa-ul">\
 		<li ng-repeat="like in records[currentrec].Dislikes"><span class="fa-li"><i class="fas fa-heart-broken"></i></span>{{like}}</li>\
@@ -72,16 +72,16 @@ function sidebar(){
 function profile(){
 	return {
 		template: '<section class="profile row">\
-            <div class="col-3">\
+            <div class="col-lg-3 col-md-5 col-sm-4 col-12">\
             	<img class="profile__image" ng-src="{{records[currentrec].img}}">\
             </div>\
-            <div class="col-9">\
-            <h3>{{records[currentrec].name}}</h3>\
+            <div class="col-lg-9 col-md-7 col-sm-8">\
+            <h3 class="profile__name">{{records[currentrec].name}}</h3>\
             <div rating-div></div>\
               <button ng-click="sendMessage()" class="button button--main">SEND MESSAGE</button><br>\
             </div>\
             <div class="col-12">\
-            <p class="profile__description">{{records[currentrec].Description}}</p>\
+            <p class="profile__description pl-3">{{records[currentrec].Description}}</p>\
             </div>\
             <div class="col-12" likes-div></div>\
           </section>'

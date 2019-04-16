@@ -20,6 +20,10 @@ body {
   max-width: 1300px;
   margin: 0 auto; }
 
+@media (max-width: 1299px) {
+  .header__content {
+    padding: 0 15px; } }
+
 .header__userinfo {
   float: right;
   margin-top: -35px; }
@@ -27,6 +31,10 @@ body {
     font-size: 30px;
     vertical-align: middle;
     margin-left: 4px; }
+
+@media (max-width: 577px) {
+  .header__username {
+    display: none; } }
 
 .search {
   position: relative; }
@@ -78,10 +86,14 @@ body {
   width: 100%;
   border: 1px solid #d0dfeb;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 17px;
   padding: 20px 0 0 15px;
   cursor: pointer;
   margin: 0 0 15px 0; }
+
+@media (max-width: 577px) {
+  .sidebar .list {
+    font-size: 20px; } }
 
 .sidebar .list:hover {
   background: #d0dfeb; }
@@ -97,16 +109,24 @@ body {
 .profile {
   margin-top: 12px; }
 
+.profile__name {
+  font-size: 25px; }
+
 .profile__image {
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  max-width: 200px;
+  max-height: 200px;
   border-radius: 5px; }
+
+@media (max-width: 767px) {
+  .profile__image {
+    max-width: 100%;
+    max-height: 100%; } }
 
 .profile__description {
   margin: 25px 0 30px;
   font-size: 18px;
-  border-left: 6px solid #eeeeee;
-  padding-left: 40px; }
+  border-left: 6px solid #eeeeee; }
 
 .likes__header {
   background-color: #eeeeee;
